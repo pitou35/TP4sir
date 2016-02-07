@@ -17,6 +17,8 @@ function DnD(canvas, interactor) {
 			this.mouseDown=true;
 			this.xDebut=getMousePosition(canvas, evt).x;
 			this.yDebut=getMousePosition(canvas, evt).y;
+			console.log("xDebut"+this.xDebut);
+			console.log("yDebut"+this.yDebut);
 		}
 	}.bind(this);
 	
@@ -25,6 +27,8 @@ function DnD(canvas, interactor) {
 			//this.mouseDown=true;
 			this.xFin=getMousePosition(canvas, evt).x;
 			this.yFin=getMousePosition(canvas, evt).y;
+			console.log("xFin"+this.xFin);
+			console.log("yFin"+this.yFin);
 		}
 		
 	}.bind(this);
@@ -36,6 +40,8 @@ function DnD(canvas, interactor) {
 			this.yFin=0;
 			this.yDebut=0;
 			this.xDebut=0;
+			console.log("xFin"+this.xFin);
+			console.log("yFin"+this.yFin);
 		}
 	}.bind(this);
 
