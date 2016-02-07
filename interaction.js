@@ -40,6 +40,11 @@ function DnD(canvas, interactor) {
 	}.bind(this);
 
 	// Associer les fonctions précédentes aux évènements du canvas.
+	
+	var Canvas = document.getElementById("myCanvas");
+	canvas.addEventListener('mousedown', this.Pression, false);
+	canvas.addEventListener('mousemove', this.Deplacement, false);
+	canvas.addEventListener('mouseup', this.Relachement, false);
 };
 
 
