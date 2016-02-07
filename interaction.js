@@ -3,8 +3,25 @@
 // L'interacteur viendra dans un second temps donc ne vous en souciez pas au départ.
 function DnD(canvas, interactor) {
 	// Définir ici les attributs de la 'classe'
+	
+	this.xDebut=0;
+	this.xFin=0;
+	this.yDebut=0;
+	this.yFin=0;
 
 	// Developper les 3 fonctions gérant les événements
+	
+	this.Pression=function(evt){
+		
+	}.bind(this);
+	
+	this.Deplacement=function(evt){
+		
+	}.bind(this);
+	
+	this.Relachement=function(evt){
+		
+	}.bind(this);
 
 	// Associer les fonctions précédentes aux évènements du canvas.
 };
