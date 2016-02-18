@@ -41,11 +41,7 @@ Drawing.prototype.updateShapeList = function(form){
 	var colour=document.getElementById('colour');
 	var spinnerWidth=document.getElementById('spinnerWidth');
 	var x = tableRef.childNodes.length;
-
-
 	var newRow   = tableRef.insertRow(tableRef.rows.length);
-
-
 	var newCell1  = newRow.insertCell(0);
 	var newCell2  = newRow.insertCell(1);
 	var newCell3  = newRow.insertCell(2);
@@ -74,6 +70,20 @@ Drawing.prototype.updateShapeList = function(form){
 	newCell3.appendChild(newText3);
 	newCell4.appendChild(newButton);
 };
+
+Drawing.prototype.removeShapeFromList = function(index) {
+    
+    this.removeForm(index);
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    drawing.paint(ctx, canvas);
+    var shapeList = document.getElementById('myTable').getElementsByTagName('tbody')[0];
+    while( shapeList.firstChild) {  
+        shapeList.removeChild( shapeList.firstChild);
+    }
+    for(var x= 0, nb=drawing.forms.length;x<nb;x++){  
+        drawing.updateShapeList(drawing.forms[x]);
+    }
+}
 
 
 
