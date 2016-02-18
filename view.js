@@ -1,8 +1,8 @@
 
 
 Drawing.prototype.paint = function(ctx) {
-	console.log("test");
-	console.log(this.getForms());
+	//console.log("test");
+	//console.log(this.getForms());
     ctx.fillStyle = '#F0F0F0'; // set canvas' background color
     ctx.fillRect(0, 0, canvas.width, canvas.height);
     this.forms.forEach(function(eltDuTableau) {
