@@ -21,7 +21,7 @@ function Pencil(ctx, drawing, canvas) {
 		var butLine=document.getElementById('butLine');
 		var spinnerWidth=document.getElementById('spinnerWidth');
 		var colour=document.getElementById('colour');
-		
+		console.log(colour.value);
 		this.currLineWidth= spinnerWidth.value;
 		this.currColour=colour.value;
 		
@@ -70,6 +70,7 @@ function Pencil(ctx, drawing, canvas) {
 		drawing.addForm(this.currentShape);
 		
 		drawing.paint(ctx, canvas);
+		drawing.updateShapeList(this.currentShape);
 	}.bind(this);
 	
 	

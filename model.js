@@ -19,12 +19,14 @@ function Form(epaisseur, couleur){
 }
 
 function Rectangle(X, Y, largeur, hauteur, epaisseur, couleur){
-	console.log("nouveau rectangle")
+	//console.log("nouveau rectangle")
 	Form.call(this, couleur, epaisseur);
 	this.X=X;
 	this.Y=Y;
 	this.largeur=largeur;
 	this.hauteur=hauteur;
+	//console.log(epaisseur);
+	//console.log(couleur);
 }
 
 
