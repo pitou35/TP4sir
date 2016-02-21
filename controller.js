@@ -71,6 +71,8 @@ function Pencil(ctx, drawing, canvas) {
 		
 		drawing.paint(ctx, canvas);
 		drawing.updateShapeList(this.currentShape);
+		
+		this.currentShape=null;
 	}.bind(this);
 	
 	
